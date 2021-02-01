@@ -14,11 +14,14 @@ function time(){
   let m = date.getMinutes();
   let s = date.getSeconds();
 
+  h = ("0" + h).slice(-2);
+  m = ("0" + m).slice(-2);
+  s = ("0" + s).slice(-2);
+
   let showTime = h + " : " + m + " : " + s;
   
   clockDiv.innerText = showTime; 
-
   clockDiv.textContent = showTime;
 }
 
-setInterval(time)
+setInterval(time, 1000);
