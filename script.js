@@ -22,7 +22,7 @@ function time(){
   m = ("0" + m).slice(-2);
   s = ("0" + s).slice(-2);
 
-  let showTime = h + " : " + m + " : " + s;
+  let showTime = h + ":" + m + ":" + s;
   
   nrDiv.innerText = showTime; 
   nrDiv.textContent = showTime;
